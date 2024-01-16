@@ -10,7 +10,12 @@
 
 # 2. Dictionaries:
 # a) Build a dictionary representing a car with keys like ‘brand’, ‘model’, and ‘year’.
+cars = {"brand":"Toyota", "model":"highlander", "year":2025}
+
 # b) Add a new key-value pair to the dictionary and print the updated dictionary.
+cars = {"brand":"Toyota", "model":"highlander", "year":2025}
+cars["fuel"] = "diesel"
+print(cars)
 
 
 # 3. Set:
