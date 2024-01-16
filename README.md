@@ -1,4 +1,5 @@
-#synthax for print function
+REMEMBER TO UNCOMMENT ALL BEFORE RUNNING ON YOUR PYCHARM.
+synthax for print function
 #print("")
 
 # print("JJTech")
