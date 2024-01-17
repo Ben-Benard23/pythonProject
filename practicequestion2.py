@@ -10,17 +10,33 @@
 
 # 2. Dictionaries:
 # a) Build a dictionary representing a car with keys like ‘brand’, ‘model’, and ‘year’.
-cars = {"brand":"Toyota", "model":"highlander", "year":2025}
+# cars = {"brand":"Toyota", "model":"highlander", "year":2025}
 
 # b) Add a new key-value pair to the dictionary and print the updated dictionary.
-cars = {"brand":"Toyota", "model":"highlander", "year":2025}
-cars["fuel"] = "diesel"
-print(cars)
+# cars = {"brand":"Toyota", "model":"highlander", "year":2025}
+# cars["fuel"] = "diesel"
+# print(cars)
 
 
 # 3. Set:
 # a) Create two sets of numbers and find their union and intersection.
-# b) Check if one set is a subset of another.
+#Union method
+# odd_numbers = {1,3,5,7,9}
+# square_numbers ={4,9,16,25}
+# numbers = odd_numbers.union(square_numbers)
+# print(numbers) #outcome is {1, 3, 4, 5, 7, 9, 16, 25}
+
+#Intersection method
+# odd_numbers = {1,3,5,7,9}
+# square_numbers ={4,9,16,25}
+# numbers = odd_numbers.intersection(square_numbers)
+# print(numbers) #outcome is {9}
+#
+# # b) Check if one set is a subset of another.
+# odd_numbers = {1,3,5,7,9}
+# square_numbers ={4,9,16,25}
+# print("sqare_numbers" in odd_numbers)  # outcome is False
+
 
 
 # 4. Tuple:
@@ -60,6 +76,6 @@ print(cars)
 
 
 # c) Using a list, check if a given item is present, and print a corresponding message.
-elements = ("Book", "Pen", "Pencil")
-print("Bag" in elements)  #output is Flase
-print("Book" in elements)  #output is True
+# elements = ("Book", "Pen", "Pencil")
+# print("Bag" in elements)  #output is Flase
+# print("Book" in elements)  #output is True

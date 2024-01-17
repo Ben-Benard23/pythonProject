@@ -1,6 +1,6 @@
 #Recall Dictionaries just like list and tuples are compound data types
 #Dictionaries store KEY-VALUE pairs
-# synthax is inside kelle brackets seperated by commers as shown
+# synthax is inside curly brackets seperated by commers as shown
 
 #user1 = {"key1":"value1","key2":"value2"}
 #print(user1)  # outcome is {'key1': 'value1', 'key2': 'value2'}
@@ -42,7 +42,7 @@
 #     print(name)   # this prints the keys of the dictionary
 
 # to print the key and value
-user2 = {"Name":"Ben", "age": 61}
-for name in user2:
-    print(name)
-    print(user2[name])  # this prints the key and value
+# user2 = {"Name":"Ben", "age": 61}
+# for name in user2:
+#     print(name)
+#     print(user2[name])  # this prints the key and value
