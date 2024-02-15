@@ -27,9 +27,9 @@
 
 # ADDING A NEW KEY AND VALUE if you add a key that does not exists it adds to the pair.
 #example
-# user2 = {"Name":"Ben", "age": 61}
-# user2["movies"] = ["ironman", "Titanic"]
-# print(user2)
+user2 = {"Name":"Ben", "age": 61}
+user2["movies"] = ["ironman", "Titanic"]
+print(user2)
 
 #REMOVING ELEMENTS FROM THE DICTIONARY> use the pop mehtod
 # user2 = {"Name":"Ben", "age": 61}

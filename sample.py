@@ -1,6 +1,7 @@
 #synthax for print function
 #print("")
 
+
 # print("JJTech")
 # print("Towerbatch")
 
@@ -68,9 +69,9 @@
 
 #VARIABLES
 #Variables are used to store data values that can be used in other programs
-a = 1
-b = "JJTech"
-c = 13.5
+# a = 1
+# b = "JJTech"
+# c = 13.5
 # # print(type("a"))
 # # print(type("b"))
 # # print(type("c"))
@@ -266,29 +267,276 @@ False or True = True"""
 # for i in range(10): # here only the end point is mentioned , so it starts at zero
 #     print(i)
 
-# # a =["petrollena", "Fred", "Benard"]
-# # for y in a:
-# #     print("JJTech")
-# #     print(y)  #output will be JJTech Petrollena, JJTech Fred, and JJTech Benard
+# a =["petrollena", "Fred", "Benard"]
+# for y in a:
+#     print("JJTech")
+   # print(y)  #output will be JJTech Petrollena, JJTech Fred, and JJTech Benard
 
 # ebs = ["project","p2", "p3", "p4"]
 # for i in ebs:
 #     print(i)
+#     print("Ben")
 
 # a =["petrollena", "fred", "benard"]
 # for y in a:
-#     if y== "Fred"or y =="Benard":
+#     if y== "Fred"or y =="benard":
 #        print("JJTech")
 #        print(y)  # you want to print Fred and Benard
 #     else:
 #         print(y)
 
 
-a =["petrollena", "Fred", "Benard"]
-for y in a:
-    if y== "petrollena":
-        pass
-    else:
-       print("JJTech")
-       print(y)  # you want to print Fred and Benard
+# a =["petrollena", "Fred", "Benard"]
+# for y in a:
+#     if y== "petrollena":
+#         pass
+#     else:
+#        print("JJTech")
+#        print(y)  # you want to print Fred and Benard
 
+# The for loop
+# it is a looping mechanism that iterates until a given task is executed
+
+#The while loop
+# i=6
+# while (i<5):
+#     print("hello") #here the loop goes on and on until the condition is changed or the condition fails
+
+# i=0
+# while (i<5):
+#     print("hello")
+#     i=i+1  # this will stop the loop by increasing the value of i by one each time.
+
+#Nested loops
+
+#where the loop breaks is after it completes the range
+
+# for i in range(5):  # range of 5 is 0,1,2,3,4
+#    for z in range(3):  #range of 3 is 0,1,2
+#         print("Tower")  # outcome is 15 Towers printed
+
+# for i in range(5):  # range of 5 is 0,1,2,3,4
+#    for z in range(3):  #range of 3 is 0,1,2
+#         print("Tower")
+#    print("Main loop")
+
+# for i in range(10):
+#     while i<=5:
+#         print("Tower") # this will not stop because the wile statement is indefinite
+#         i=i+1
+#     print("Main loop")
+
+# # Break Statement
+# for i in range(10):
+#     if i==5:
+#         break
+#     print("Main loop") #it will print Mainl loop 5 times
+
+# for i in range(10):
+#     if i==5:
+#         continue #skip
+#     print("Main loop") #it will print Mainl loop 9 times because it skipped at i=5
+#
+# for i in range(10): # 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+#     if i==5:
+#         continue #skip
+#     print("Main loop", "value of i is :", i) #it will print Mainl loop 9 times because it skipped at i=5
+
+#Pass : means to go ahead
+# for i in range(10):
+#     if i==5:
+#         pass
+#     print("tower")
+
+
+#Functions
+# # Consider doing the same things in a very long code
+# a= 5
+# b = 3
+# print (a +b)  # a + b is a business logic
+# # if I want to add some other values
+# c =10
+# d =4
+# print(c+d)
+# # we are writing the business logic multiple time. So functions come into place
+# a function is defined by def then function
+# def addition(a,b):
+#     print(a+b)
+#
+# addition (5,7)       # when you call the function it goes and execute the "def"
+# addition(83,923)
+
+#use case
+# def creates3bucket(bucketname):
+#     response = client.create_bucket(
+#         ACL=acl,
+#         Bucket=bucketname
+#     )
+
+
+# import boto3
+# def createec2(amiid,instancetype, region):
+#     client = boto3.client('ec2',region_name = region)
+#     response = client.run_instances(
+#
+#         ImageId=amiid,
+#         InstanceType=instancetype,
+#         MaxCount = 1,
+#         MinCount =1
+#     )
+#
+# createec2("ami-0944e91aed79c721c","t2.micro","us-west-2")
+# createec2("ami-0944e91aed79c721c","t2.medium","us-west-2")
+# createec2("ami-0944e91aed79c721c","t2.large","us-west-2")
+
+#Class of Jan 23rd 2024
+# def test(a,b,c):
+#     print(a+b*c)
+# test(4,6,10)
+# print("is your result")
+
+# def test(a,b,c):
+#     return a+b*c
+# test(4,6,10)  # here you will not see the value in the output . You need the print statement to see the values
+
+# def test(a,b,c):
+#     return a+b*c
+# print(test(4,6,10)) #  You need the print statement to see the values  OR asign the result to a variable, then print.
+
+# def test(a,b,c):
+#     return a+b*c
+# a = test(4,6,10)
+# print(a)
+
+# Assignment
+# create 3 functions
+# 1. addition of two values
+# 2. subtract two values
+# 3. multiple two values
+# def values(a,b):
+#     return (a+b)
+# print(values(4,5))
+#
+# def values(a,b):
+#     return (a*b)
+# print(values(4,5))
+#
+# def values(a,b):
+#     return (a-b)
+# print(values(4,5))
+
+#File Handling
+#Within a code we can open the file , read, write and delete things and then  close the code back.
+#to get assess to your computer you need to import the OS module
+
+
+#import OS
+#file = open(filepath, mode)
+
+# file_data = open("C:\\Users\\12049\\Documents\\pythonProject\\testingfile.txt",'r')
+# print(file_data.read()) # just type file_data. and it will show options to auto complete
+
+#write function with append "a"
+# file_data = open("C:\\Users\\12049\\Documents\\pythonProject\\testingfile.txt",'a')
+# file_data.write ("Now the file has more content")
+# file_data = open("C:\\Users\\12049\\Documents\\pythonProject\\testingfile.txt",'r')
+# print(file_data.read())
+# file_data.close()
+
+# To read code one line after another:
+# file_data = open("C:\\Users\\12049\\Documents\\pythonProject\\testingfile.txt",'a')
+# file_data.write ("Now the file has more content")
+# file_data = open("C:\\Users\\12049\\Documents\\pythonProject\\testingfile.txt",'r')
+# print(file_data.read())
+# print(file_data.read())
+# print(file_data.read())
+# print(file_data.read())
+# file_data.close()
+
+#Looping
+# file_data = open("C:\\Users\\12049\\Documents\\pythonProject\\testingfile.txt",'r')
+# for i in file_data:
+#     print(i.split)
+# file_data.close()
+
+#To create a file use "X"
+# file_data = open("C:\\Users\\12049\\Documents\\pythonProject\\testingfile.txt",'x')
+# file_data.close()  #it gives an error because the file already exixt
+
+#EXEPTION HANDLING
+#if you already know that something can happen, you can haddle it.Write a code to handle the exeption
+#synthax error example-1
+# print("\n# syntax eror example-1")
+# print(abcd)
+
+#OUR error not syntax
+#print("\n# syntax eror example-1 (Logical")
+
+#
+# try:    # use if you knoew there is an error in the code
+#     mark = 85
+#     result = marks / 0
+#     print("results: {}".format(result))
+# except:
+#     print("there is an eror in the above block")
+
+# To figure out the error if you do not know
+
+# print("\n# syntax eror example-1 (Logical")
+#
+#
+# try:    # use if you knoew there is an error in the code
+#     marks = 85
+#     result = marks / 0
+#     print("results: {}".format(result))
+# except Exception as e: #use to handle errors without code breaking
+#     print(e)   # this prints the error division by zero.then copy the error and put in google, then put
+               #python to see how to solve the error
+
+#HOW TO HANDLE THE EXEPTION(for big lines of codes)
+
+# try:    # use if you knoew there is an error in the code
+#     marks = 85
+#     result = marks / 0
+#     print("results: {}".format(result))
+#
+# except ZeroDivisionError:
+#     print("Seems like you are dividing a number with rezo wh shold not work, please chech your input")
+# except Exception as e: #use to handle errors without code breaking
+#     print(e) #code does not print exeption as e, but if it is a syntax error it will pring exception as e
+
+# try:
+#     a=10
+#     if a==10:
+#         print("test")
+# except SyntaxError:
+#     print("hellooooo")
+# except ZeroDivisionError:
+#       print("Seems like you are divding a number with zero which should not work, please check your input!")
+# except Exception as e:
+#     print(e)
+#
+
+#BOTO 3 Class of Feb 14th
+#three ways to access your AWS account
+# import boto3
+# boto3.client(*args: "ec2", region_name="us-east-1")
+#                            aws_access_key_id="AKIAYWZTYYZXYCUAUXMR"
+#                            aws_secret_access_key="39Xa2ucLMZ7/hbcyv1HFJBUjqH0DJyPgYLKNdsEP"
+
+                           #Not recommended because you hardcode your credential
+
+# #Second option is the best option. The command picks the credentials of your user
+# import boto3
+#
+# client = boto3.client('ec2', region_name="us-east-1")
+
+#Third option
+# session = boto3.session.Session(profile_name="m-w-imm-b") # for high level stuff
+#
+# client = session.client(service_name: "secretsmanager" , region_name="us-east-1") #for granular level stuff
+# #mostly used client for granular level
+
+#example
+import boto3
+#below is the ec2 client
