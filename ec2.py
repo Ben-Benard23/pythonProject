@@ -9,7 +9,7 @@
 #copy what is required in the request syntax, then the response syntax
 
 import boto3
-client = boto3.client('ec2', region_name = "ca-central-1")
+client = boto3.client('ec2', region_name="ca-central-1")
 
 response = client.run_instances(
 

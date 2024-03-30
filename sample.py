@@ -538,5 +538,5 @@ False or True = True"""
 # #mostly used client for granular level
 
 #example
-import boto3
+# import boto3
 #below is the ec2 client
